@@ -3,7 +3,7 @@ import './App.css';
 import CharacterList from './components/CharacterList.js';
 
 const App = () => {
-  const [char, setChar] = useState();
+  
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
