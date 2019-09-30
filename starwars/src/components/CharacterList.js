@@ -8,12 +8,13 @@ import {
 
 export default function CharacterList(props) {
     const [char, setChar] = useState([]);
+    const [spec, setSpec] = useState([]);
     useEffect(() => {
         axios
             .get(`https://swapi.co/api/people/`)
             .then(result => {
                 console.log(result);
-                setChar(result.data.results);               
+                setChar(result.data.results);     
             })
             .catch(err => {
                 console.log(err);
